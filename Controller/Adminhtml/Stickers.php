@@ -1,6 +1,6 @@
 <?php
 namespace Luxinten\ProductStickers\Controller\Adminhtml;
-abstract class ProductStickers extends \Magento\Backend\App\AbstractAction
+abstract class Stickers extends \Magento\Backend\App\Action
 {
     protected $_coreRegistry;
     public function __construct(
@@ -21,12 +21,15 @@ abstract class ProductStickers extends \Magento\Backend\App\AbstractAction
         $this->resultJsonFactory = $resultJsonFactory;
         $this->resultLayoutFactory = $resultLayoutFactory;
         $this->resultRawFactory = $resultRawFactory;
+
+        die('Hackathon');
     }
     /**
      * @return $this
      */
     protected function _initAction()
     {
+        die('Hackathon');
         $resultPage = $this->resultPageFactory->create();
 
         return $resultPage;
@@ -44,6 +47,7 @@ abstract class ProductStickers extends \Magento\Backend\App\AbstractAction
      */
     protected function _isAllowed()
     {
+        die('Hackathon');
         return $this->_authorization->isAllowed('Luxinten_ProductStickers::product_stickers');
     }
 

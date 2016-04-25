@@ -8,7 +8,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="admin.stickers.grid">
-            <block class="Magento\Backend\Block\Widget\Grid" name="luxinten.stickers.grid" as="ps.grid">
+            <block class="Magento\Backend\Block\Widget\Grid" name="luxinten.stickers.grid" as="stickers.grid">
                 <arguments>
                     <argument name="id" xsi:type="string">affiliate</argument>
                     <argument name="dataSource" xsi:type="object">Luxinten\ProductStickers\Model\ResourceModel\Stickers\Collection</argument>
@@ -16,7 +16,7 @@
                     <argument name="default_dir" xsi:type="string">ASC</argument>
                     <argument name="save_parameters_in_session" xsi:type="string">1</argument>
                 </arguments>
-                <block class="Magento\Backend\Block\Widget\Grid\ColumnSet" name="promo.stickers.grid.columnSet" as="grid.columnSet">
+                <block class="Magento\Backend\Block\Widget\Grid\ColumnSet" name="luxinten.stickers.grid.columnSet" as="grid.columnSet">
                     <arguments>
                         <argument name="rowUrl" xsi:type="array">
                             <item name="path" xsi:type="string">stickers/*/edit</item>

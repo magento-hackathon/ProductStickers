@@ -14,8 +14,8 @@
              parent="Luxinten_ProductStickers::product_stickers"
              module="Luxinten_ProductStickers"
              sortOrder="10"
-             resource="Luxinten_ProductStickers::product_stickers"
-             action="stickers/grid"
+             resource="Luxinten_ProductStickers::stickers"
+             action="stickers/grid/index"
         />
 
         <add id="Luxinten_ProductStickers::product_stickers_settings" title="Settings" module="Luxinten_ProductStickers" sortOrder="20"
