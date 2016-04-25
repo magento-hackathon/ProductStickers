@@ -72,7 +72,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 )
                 ->addColumn(
                     'stop_rule_processing',
-                    \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
                     null,
                     [
                         'nullable' => false,
@@ -82,7 +82,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 )
                 ->addColumn(
                     'method_php',
-                    \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
                     null,
                     [
                         'nullable' => false,
