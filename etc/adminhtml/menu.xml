@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Luxinten_ProductStickers::product_stickers"
+             title="ProductStickers"
+             parent="Magento_Catalog::catalog"
+             module="Luxinten_ProductStickers"
+             sortOrder="60"
+             dependsOnModule="Magento_Catalog"
+             resource="Luxinten_ProductStickers::product_stickers"/>
+
+        <add id="Luxinten_ProductStickers::product_stickers_list"
+             title="Product Stickers List"
+             parent="Luxinten_ProductStickers::product_stickers"
+             module="Luxinten_ProductStickers"
+             sortOrder="10"
+             resource="Luxinten_ProductStickers::product_stickers"
+             action="stickers/grid"
+        />
+
+        <add id="Luxinten_ProductStickers::product_stickers_settings" title="Settings" module="Luxinten_ProductStickers" sortOrder="20"
+             resource="Luxinten_ProductStickers::product_stickers_config_settings"
+             parent="Luxinten_ProductStickers::product_stickers"
+             action="adminhtml/system_config/edit/section/product_stickers" />
+    </menu>
+</config>

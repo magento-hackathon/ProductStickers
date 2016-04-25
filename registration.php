@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
         \Magento\Framework\Component\ComponentRegistrar::MODULE,
-        'Hackathon_ProductStickers',
+        'Luxinten_ProductStickers',
         __DIR__
     );
