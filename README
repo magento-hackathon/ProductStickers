@@ -1,0 +1,10 @@
+## Installation
+
+To install extenstion while it in development version:
+
+composer config repositories.hackathon-product-sticker git https://github.com/magento-hackathon/ProductStickers.git
+
+composer require hackathon/product-sticker:dev-master
+
+bin/magento module:enable Hackathon_ProductStickers
+bin/magento setup:upgrade
